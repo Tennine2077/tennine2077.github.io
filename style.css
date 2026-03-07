@@ -334,6 +334,18 @@ body {
     margin-bottom: 12px;
 }
 
+.paper-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #e94560, #ff6b6b);
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 8px;
+    box-shadow: 0 2px 10px rgba(233, 69, 96, 0.3);
+}
+
 .project-tags {
     display: flex;
     flex-wrap: wrap;
