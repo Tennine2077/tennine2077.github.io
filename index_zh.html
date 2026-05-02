@@ -117,8 +117,13 @@
                             <p class="degree">研究型实习生 | 多模态大语言模型</p>
                             <p class="date"><i class="far fa-calendar-alt"></i> 2025年5月 - 2026年2月</p>
                             <p class="experience-desc" style="margin-top: 10px; font-size: 14px; color: #a0a0a0;">
-                                专注于电商内容理解和商业意图识别的多模态大模型研究。开发了HiDe，一种无需训练的层次化解耦方法，在高分辨率VQA基准上达到SOTA性能（V*score：79.1 → 92.1），超越了基于RL的方法。构建了E-VAds，首个面向电商短视频理解的大规模多模态问答基准，包含3,961个视频和19,785个开放式问答对。设计了MG-GRPO多粒度奖励策略用于RL训练。
+                                在阿里妈妈担任研究型实习生，负责多模态大模型在电商内容理解和商业意图识别方向的研究与应用。深入分析电商短视频数据与用户需求，参与设计并验证新型 MLLMs 算法，并在团队内进行多模态前沿技术分享，助力技术影响力建设。
                             </p>
+                            <ul style="margin-top: 10px; font-size: 13px; color: #a0a0a0; line-height: 1.8; padding-left: 20px;">
+                                <li><strong>高分辨率 MLLMs 理解突破：</strong>揭示了 MLLMs 在高分辨率 VQA 中的性能瓶颈为背景干扰问题，提出免训练层次化解耦方法 HiDe。通过注意力解耦和布局保留策略，在 V*Bench 实现从 79.1→92.1 的跃升，性能甚至超越 RL 训练方案。</li>
+                                <li><strong>电商广告视频多模态基准构建：</strong>主导构建首个面向电商短视频商业意图理解的视频 VQA 基准 E-VAds，完成 3,961 条高质量广告视频的采集与清洗；设计多智能体协同流水线自动生成 19,785 条开放式问答对，填补垂直领域评测空白。</li>
+                                <li><strong>商业意图识别模型训练与优化：</strong>基于 E-VAds 采用 SFT 冷启动+RL 强化学习训练范式，创新提出 MG-GRPO 多粒度奖励策略，通过早期平滑探索与后期非线性激励耦合，有效缓解复杂商业意图推理中的奖励稀疏与收敛不稳定问题。基于该基准训练的 E-VAds-R1 模型仅需数百条样本冷启动，即在商业意图推理任务上实现+109.2%的显著性能跃升。</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -128,6 +133,55 @@
             <section class="card">
                 <h2 class="card-title"><i class="fas fa-file-alt"></i> 学术论文</h2>
                 <div class="card-content">
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h3>HiDe</h3>
+                            <div style="display: flex; gap: 15px;">
+                                <a href="https://arxiv.org/abs/2510.00054" target="_blank" class="project-link">
+                                    <i class="fas fa-file-pdf"></i> arXiv
+                                </a>
+                                <a href="https://tennine2077.github.io/HiDe.github.io/" target="_blank" class="project-link">
+                                    <i class="fas fa-globe"></i> 项目
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-desc"><span class="paper-badge">ICML 2026</span> HiDe：通过层次化解耦重新思考高分辨率MLLM中的放大方法</p>
+                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
+                            <img src="HiDe.png" alt="HiDe" style="width: 100%; display: block;">
+                        </div>
+                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>柳先杰</strong>，胡依漫，邹一雄，等</p>
+                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
+                            针对MLLMs在高分辨率图像上表现不佳的问题，此前归因于感知不足并采用"放大"策略。通过层次化解耦分析发现真正瓶颈是背景干扰而非物体大小，据此提出无需训练的HiDe框架。利用Token级注意力解耦（TAD）定位关键区域，并通过布局保持解耦（LPD）构建紧凑表示。HiDe在V*Bench上达到SOTA（Qwen2.5-VL 7B：92.1），超越RL方法，内存消耗降75%。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">MLLM</span>
+                            <span class="tag">高分辨率</span>
+                            <span class="tag">视觉语言</span>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h3>E-VAds</h3>
+                            <a href="https://arxiv.org/abs/2602.08355" target="_blank" class="project-link">
+                                <i class="fas fa-file-pdf"></i> arXiv
+                            </a>
+                        </div>
+                        <p class="project-desc"><span class="paper-badge">ICML 2026</span> E-VAds：面向MLLM的电商短视频理解基准</p>
+                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
+                            <img src="E-VAds.png" alt="E-VAds" style="width: 100%; display: block;">
+                        </div>
+                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>柳先杰</strong>，胡依漫，吴亮，等</p>
+                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
+                            针对电商短视频缺乏专用基准、现有模型难处理开放商业意图推理的问题，本文提出首个电商短视频理解基准E-VAds。该基准包含3,961条高质量视频与19,785个开放问答，覆盖感知与推理两大维度五大任务，涵盖基础感知、跨模态检测、营销逻辑、消费者洞察与合规审查。本文设计多智能体标注系统保障标注质量，并提出MG-GRPO多粒度奖励策略。E-VAds-R1仅需数百样本即实现商业意图推理109.2%性能提升。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">MLLM</span>
+                            <span class="tag">电商</span>
+                            <span class="tag">基准</span>
+                        </div>
+                    </div>
+
                     <div class="project-item">
                         <div class="project-header">
                             <h3>PDFNet</h3>
@@ -152,55 +206,6 @@
                             <span class="tag">计算机视觉</span>
                             <span class="tag">图像分割</span>
                             <span class="tag">深度先验</span>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>HiDe</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://arxiv.org/abs/2510.00054" target="_blank" class="project-link">
-                                    <i class="fas fa-file-pdf"></i> arXiv
-                                </a>
-                                <a href="https://tennine2077.github.io/HiDe.github.io/" target="_blank" class="project-link">
-                                    <i class="fas fa-globe"></i> 项目
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">arXiv 2026</span> HiDe：通过层次化解耦重新思考高分辨率MLLM中的放大方法</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="HiDe.png" alt="HiDe" style="width: 100%; display: block;">
-                        </div>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>柳先杰</strong>，胡依漫，邹一雄，等</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            针对MLLMs在高分辨率图像上表现不佳的问题，此前归因于感知不足并采用"放大"策略。通过层次化解耦分析发现真正瓶颈是背景干扰而非物体大小，据此提出无需训练的HiDe框架。利用Token级注意力解耦（TAD）定位关键区域，并通过布局保持解耦（LPD）构建紧凑表示。HiDe在V*Bench上达到SOTA（Qwen2.5-VL 7B：92.1），超越RL方法，内存消耗降75%。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">MLLM</span>
-                            <span class="tag">高分辨率</span>
-                            <span class="tag">视觉语言</span>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>E-VAds</h3>
-                            <a href="https://arxiv.org/abs/2602.08355" target="_blank" class="project-link">
-                                <i class="fas fa-file-pdf"></i> arXiv
-                            </a>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">arXiv 2026</span> E-VAds：面向MLLM的电商短视频理解基准</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="E-VAds.png" alt="E-VAds" style="width: 100%; display: block;">
-                        </div>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>柳先杰</strong>，胡依漫，吴亮，等</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            针对电商短视频缺乏专用基准、现有模型难处理开放商业意图推理的问题，本文提出首个电商短视频理解基准E-VAds。该基准包含3,961条高质量视频与19,785个开放问答，覆盖感知与推理两大维度五大任务，涵盖基础感知、跨模态检测、营销逻辑、消费者洞察与合规审查。本文设计多智能体标注系统保障标注质量，并提出MG-GRPO多粒度奖励策略。E-VAds-R1仅需数百样本即实现商业意图推理109.2%性能提升。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">MLLM</span>
-                            <span class="tag">电商</span>
-                            <span class="tag">基准</span>
                         </div>
                     </div>
 

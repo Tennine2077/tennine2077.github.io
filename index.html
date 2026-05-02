@@ -117,8 +117,13 @@
                             <p class="degree">Research Intern | Multimodal Large Language Models</p>
                             <p class="date"><i class="far fa-calendar-alt"></i> May 2025 - Feb 2026</p>
                             <p class="experience-desc" style="margin-top: 10px; font-size: 14px; color: #a0a0a0;">
-                                Conducted research on multimodal large models for e-commerce content understanding and commercial intent recognition. Developed HiDe, a training-free hierarchical decoupling method that achieved SOTA performance on high-resolution VQA benchmarks (V*score: 79.1 → 92.1), surpassing RL-based methods. Built E-VAds, the first large-scale multimodal QA benchmark for e-commerce short video understanding, containing 3,961 videos and 19,785 open-ended QA pairs. Designed MG-GRPO multi-granularity reward strategy for RL training.
+                                As a Research Intern at Alimama, I was responsible for research and application of multimodal large models in e-commerce content understanding and commercial intent recognition. I conducted in-depth analysis of e-commerce short video data and user needs, participated in designing and validating novel MLLMs algorithms, and delivered multimodal frontier technology sharing sessions within the team to contribute to technical influence building.
                             </p>
+                            <ul style="margin-top: 10px; font-size: 13px; color: #a0a0a0; line-height: 1.8; padding-left: 20px;">
+                                <li><strong>High-Resolution MLLMs Understanding Breakthrough:</strong> Revealed that the performance bottleneck of MLLMs in high-resolution VQA is the background interference problem, proposed a training-free hierarchical decoupling method HiDe. Through attention decoupling and layout preservation strategies, achieved a leap from 79.1→92.1 on V*Bench, surpassing even RL training approaches.</li>
+                                <li><strong>E-commerce Advertising Video Multimodal Benchmark Construction:</strong> Led the construction of the first video VQA benchmark E-VAds for e-commerce short video commercial intent understanding, completed the collection and cleaning of 3,961 high-quality advertising videos; designed a multi-agent collaborative pipeline to automatically generate 19,785 open-ended QA pairs, filling the evaluation gap in the vertical domain.</li>
+                                <li><strong>Commercial Intent Recognition Model Training and Optimization:</strong> Based on E-VAds, adopted SFT cold start + RL reinforcement learning training paradigm, innovatively proposed MG-GRPO multi-granularity reward strategy, coupling early smooth exploration with late nonlinear incentives to effectively alleviate reward sparsity and convergence instability in complex commercial intent reasoning. The E-VAds-R1 model trained on this benchmark achieved a significant +109.2% performance leap in commercial intent reasoning tasks with only hundreds of samples for cold start.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -128,6 +133,55 @@
             <section class="card">
                 <h2 class="card-title"><i class="fas fa-file-alt"></i> Publications</h2>
                 <div class="card-content">
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h3>HiDe</h3>
+                            <div style="display: flex; gap: 15px;">
+                                <a href="https://arxiv.org/abs/2510.00054" target="_blank" class="project-link">
+                                    <i class="fas fa-file-pdf"></i> arXiv
+                                </a>
+                                <a href="https://tennine2077.github.io/HiDe.github.io/" target="_blank" class="project-link">
+                                    <i class="fas fa-globe"></i> Project
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-desc"><span class="paper-badge">ICML 2026</span> HiDe: Rethinking The Zoom-IN Method in High Resolution MLLMs via Hierarchical Decoupling</p>
+                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
+                            <img src="HiDe.png" alt="HiDe" style="width: 100%; display: block;">
+                        </div>
+                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>Xianjie Liu</strong>, Yiman Hu, Yixiong Zou, et al.</p>
+                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
+                            Addressing the poor performance of MLLMs on high-resolution images, previous work attributed this to insufficient perception and adopted "zoom-in" strategies. Through hierarchical decoupling analysis, we discovered the real bottleneck is background interference rather than object size. We propose HiDe, a training-free framework that uses Token-level Attention Decoupling (TAD) to locate key regions and Layout Preservation Decoupling (LPD) to build compact representations. HiDe achieves SOTA on V*Bench (Qwen2.5-VL 7B: 92.1), surpassing RL methods with 75% memory reduction.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">MLLM</span>
+                            <span class="tag">High Resolution</span>
+                            <span class="tag">Vision-Language</span>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h3>E-VAds</h3>
+                            <a href="https://arxiv.org/abs/2602.08355" target="_blank" class="project-link">
+                                <i class="fas fa-file-pdf"></i> arXiv
+                            </a>
+                        </div>
+                        <p class="project-desc"><span class="paper-badge">ICML 2026</span> E-VAds: An E-commerce Short Videos Understanding Benchmark for MLLMs</p>
+                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
+                            <img src="E-VAds.png" alt="E-VAds" style="width: 100%; display: block;">
+                        </div>
+                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>Xianjie Liu</strong>, Yiman Hu, Liang Wu, et al.</p>
+                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
+                            Addressing the lack of dedicated benchmarks for e-commerce short videos and existing models' difficulty in handling open commercial intent reasoning, we propose E-VAds, the first e-commerce short video understanding benchmark. It contains 3,961 high-quality videos and 19,785 open-ended QA pairs, covering five tasks across perception and reasoning dimensions: basic perception, cross-modal detection, marketing logic, consumer insight, and compliance review. We design a multi-agent annotation system and propose MG-GRPO multi-granularity reward strategy. E-VAds-R1 achieves 109.2% performance improvement in commercial intent reasoning with only hundreds of samples.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">MLLM</span>
+                            <span class="tag">E-commerce</span>
+                            <span class="tag">Benchmark</span>
+                        </div>
+                    </div>
+
                     <div class="project-item">
                         <div class="project-header">
                             <h3>PDFNet</h3>
@@ -152,55 +206,6 @@
                             <span class="tag">Computer Vision</span>
                             <span class="tag">Image Segmentation</span>
                             <span class="tag">Depth Prior</span>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>HiDe</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://arxiv.org/abs/2510.00054" target="_blank" class="project-link">
-                                    <i class="fas fa-file-pdf"></i> arXiv
-                                </a>
-                                <a href="https://tennine2077.github.io/HiDe.github.io/" target="_blank" class="project-link">
-                                    <i class="fas fa-globe"></i> Project
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">arXiv 2026</span> HiDe: Rethinking The Zoom-IN Method in High Resolution MLLMs via Hierarchical Decoupling</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="HiDe.png" alt="HiDe" style="width: 100%; display: block;">
-                        </div>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>Xianjie Liu</strong>, Yiman Hu, Yixiong Zou, et al.</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            Addressing the poor performance of MLLMs on high-resolution images, previous work attributed this to insufficient perception and adopted "zoom-in" strategies. Through hierarchical decoupling analysis, we discovered the real bottleneck is background interference rather than object size. We propose HiDe, a training-free framework that uses Token-level Attention Decoupling (TAD) to locate key regions and Layout Preservation Decoupling (LPD) to build compact representations. HiDe achieves SOTA on V*Bench (Qwen2.5-VL 7B: 92.1), surpassing RL methods with 75% memory reduction.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">MLLM</span>
-                            <span class="tag">High Resolution</span>
-                            <span class="tag">Vision-Language</span>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>E-VAds</h3>
-                            <a href="https://arxiv.org/abs/2602.08355" target="_blank" class="project-link">
-                                <i class="fas fa-file-pdf"></i> arXiv
-                            </a>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">arXiv 2026</span> E-VAds: An E-commerce Short Videos Understanding Benchmark for MLLMs</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="E-VAds.png" alt="E-VAds" style="width: 100%; display: block;">
-                        </div>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>Xianjie Liu</strong>, Yiman Hu, Liang Wu, et al.</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            Addressing the lack of dedicated benchmarks for e-commerce short videos and existing models' difficulty in handling open commercial intent reasoning, we propose E-VAds, the first e-commerce short video understanding benchmark. It contains 3,961 high-quality videos and 19,785 open-ended QA pairs, covering five tasks across perception and reasoning dimensions: basic perception, cross-modal detection, marketing logic, consumer insight, and compliance review. We design a multi-agent annotation system and propose MG-GRPO multi-granularity reward strategy. E-VAds-R1 achieves 109.2% performance improvement in commercial intent reasoning with only hundreds of samples.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">MLLM</span>
-                            <span class="tag">E-commerce</span>
-                            <span class="tag">Benchmark</span>
                         </div>
                     </div>
 
