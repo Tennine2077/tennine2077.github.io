@@ -9,358 +9,216 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="avatar-container">
-                <img src="05d421fe-8522-491f-8809-6c3c05e2db90.png" alt="头像" class="avatar">
-            </div>
-            <h1 class="name">柳先杰</h1>
-            <p class="title">人工智能硕士研究生</p>
-            <p class="subtitle">四川大学</p>
+    <div class="page">
 
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>四川大学</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>四川，中国</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:liuxianjie.scu@vip.163.com">liuxianjie.scu@vip.163.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/Tennine2077" target="_blank">Tennine2077</a>
+        <!-- Language Switch -->
+        <a href="index.html" class="lang-switch">
+            <i class="fas fa-globe"></i> English
+        </a>
+
+        <!-- Bio -->
+        <div class="bio">
+            <img src="05d421fe-8522-491f-8809-6c3c05e2db90.png" alt="柳先杰" class="bio-photo">
+            <div class="bio-info">
+                <h1 class="bio-name">柳先杰</h1>
+                <p class="bio-title">人工智能硕士研究生，四川大学</p>
+                <p class="bio-desc">
+                    我是四川大学智能科学与技术专业的硕士研究生，专注于深度学习、计算机视觉和多模态大语言模型。我的研究兴趣包括高精度二分图像分割、多模态交互与理解。2025年5月至2026年2月，我在阿里妈妈担任研究型实习生，专注于电商内容理解和商业意图识别的多模态大模型研究。
+                </p>
+                <div class="bio-links">
+                    <a href="mailto:liuxianjie.scu@vip.163.com"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://github.com/Tennine2077" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://scholar.google.com/" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
                 </div>
             </div>
+        </div>
 
-            <div class="section">
-                <h2 class="section-title"><i class="fas fa-code"></i> 技能</h2>
-                <div class="skills">
-                    <div class="skill-tag">Python</div>
-                    <div class="skill-tag">PyTorch</div>
-                    <div class="skill-tag">深度学习</div>
-                    <div class="skill-tag">计算机视觉</div>
-                    <div class="skill-tag">图像分割</div>
-                    <div class="skill-tag">MLLM</div>
+        <!-- News -->
+        <div class="section">
+            <h2 class="section-title"><i class="far fa-newspaper"></i> 最新动态</h2>
+            <ul class="news-list">
+                <li>
+                    <span class="news-date">2026.06</span>
+                    <span>两篇论文（<strong>HiDe</strong> 和 <strong>E-VAds</strong>）被 <span class="news-badge">ICML 2026</span> 接收</span>
+                </li>
+                <li>
+                    <span class="news-date">2026.03</span>
+                    <span>一篇论文（<strong>PDFNet</strong>）被 <span class="news-badge">CVPR 2026</span> 接收</span>
+                </li>
+                <li>
+                    <span class="news-date">2025.05</span>
+                    <span>加入<strong>阿里妈妈</strong>担任研究型实习生，研究多模态大语言模型</span>
+                </li>
+                <li>
+                    <span class="news-date">2025.01</span>
+                    <span>一篇论文（<strong>DIS-SAM</strong>）被 <span class="news-badge">ICME 2025</span> 接收</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Publications -->
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-file-alt"></i> 学术论文</h2>
+
+            <!-- HiDe -->
+            <div class="pub-item">
+                <div class="pub-thumb">
+                    <img src="HiDe.png" alt="HiDe">
+                </div>
+                <div class="pub-info">
+                    <span class="pub-venue">ICML 2026</span>
+                    <p class="pub-title">HiDe：通过层次化解耦重新思考高分辨率MLLM中的放大方法</p>
+                    <p class="pub-authors"><strong>柳先杰</strong>，胡伊曼，邹一雄，等</p>
+                    <p class="pub-desc">发现MLLMs在高分辨率图像上的真正瓶颈是背景干扰而非物体大小。HiDe利用Token级注意力解耦和布局保持解耦，在V*Bench上达到SOTA（92.1），超越RL方法，内存消耗降75%。</p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2510.00054" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
+                        <a href="https://tennine2077.github.io/HiDe.github.io/" target="_blank"><i class="fas fa-globe"></i> 项目</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="section">
-                <h2 class="section-title"><i class="fas fa-language"></i> 语言</h2>
-                <div class="languages">
-                    <div class="language-item">
-                        <span>中文（母语）</span>
-                        <div class="language-bar"><div class="language-level" style="width: 100%"></div></div>
-                    </div>
-                    <div class="language-item">
-                        <span>英语</span>
-                        <div class="language-bar"><div class="language-level" style="width: 80%"></div></div>
+            <!-- E-VAds -->
+            <div class="pub-item">
+                <div class="pub-thumb">
+                    <img src="E-VAds.png" alt="E-VAds">
+                </div>
+                <div class="pub-info">
+                    <span class="pub-venue">ICML 2026</span>
+                    <p class="pub-title">E-VAds：面向MLLM的电商短视频理解基准</p>
+                    <p class="pub-authors"><strong>柳先杰</strong>，胡伊曼，吴亮，等</p>
+                    <p class="pub-desc">首个电商短视频理解基准，包含3,961条视频与19,785个问答对。提出MG-GRPO多粒度奖励策略，E-VAds-R1仅需数百样本即实现商业意图推理109.2%性能提升。</p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2602.08355" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
+                        <a href="https://github.com/TaobaoTmall-AlgorithmProducts/E-VAds_Benchmark" target="_blank"><i class="fab fa-github"></i> 代码</a>
                     </div>
                 </div>
             </div>
-        </aside>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Language Switch -->
-            <div style="text-align: right; margin-bottom: 15px;">
-                <a href="index.html" class="lang-switch" style="color: #4f46e5; text-decoration: none; font-size: 14px;">
-                    <i class="fas fa-globe"></i> English
-                </a>
+            <!-- PDFNet -->
+            <div class="pub-item">
+                <div class="pub-thumb">
+                    <img src="PDFNet.png" alt="PDFNet">
+                </div>
+                <div class="pub-info">
+                    <span class="pub-venue">CVPR 2026</span>
+                    <p class="pub-title">基于深度完整性先验与细粒度Patch策略的高精度二分图像分割</p>
+                    <p class="pub-authors"><strong>柳先杰</strong>，傅可人，赵启军</p>
+                    <p class="pub-desc">引入单目伪深度图作为结构先验。PDFNet以不到50%参数量在DIS-5K达到SOTA，推理速度相较于扩散模型快约5倍。</p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2503.06100" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
+                        <a href="https://tennine2077.github.io/PDFNet.github.io/" target="_blank"><i class="fas fa-globe"></i> 项目</a>
+                    </div>
+                </div>
             </div>
 
-            
-            <!-- About Me -->
-            <section class="card">
-                <h2 class="card-title"><i class="fas fa-user"></i> 关于我</h2>
-                <div class="card-content">
-                    <p>我是四川大学智能科学与技术专业的硕士研究生，专注于深度学习、计算机视觉和多模态大语言模型。我的研究兴趣包括高精度二分图像分割、多模态交互与理解。</p>
-                    <p>2025年5月至2026年2月，我在阿里妈妈担任研究型实习生，专注于电商内容理解和商业意图识别的多模态大模型研究。我开发了用于高分辨率图像理解的HiDe框架，并构建了电商短视频分析基准E-VAds。</p>
+            <!-- DIS-SAM -->
+            <div class="pub-item">
+                <div class="pub-thumb">
+                    <img src="DIS-SAM.png" alt="DIS-SAM">
                 </div>
-            </section>
-
-            <!-- Education -->
-            <section class="card">
-                <h2 class="card-title"><i class="fas fa-graduation-cap"></i> 教育经历</h2>
-                <div class="card-content">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>四川大学</h3>
-                            <p class="degree">硕士 | 智能科学与技术</p>
-                            <p class="date"><i class="far fa-calendar-alt"></i> 2024 - 2027</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>四川大学</h3>
-                            <p class="degree">本科 | 计算机科学与技术 | 排名：3/315 (< 1%)</p>
-                            <p class="date"><i class="far fa-calendar-alt"></i> 2020 - 2024</p>
-                        </div>
+                <div class="pub-info">
+                    <span class="pub-venue">ICME 2025</span>
+                    <p class="pub-title">推动Segment Anything Model实现高精度二分图像分割</p>
+                    <p class="pub-authors"><strong>柳先杰</strong>，傅可人，蒋遥，赵启军</p>
+                    <p class="pub-desc">两阶段框架DIS-SAM，将SAM与IS-Net级联实现高精度DIS。在DIS-5K上相比SAM、HQ-SAM、Pi-SAM分别提升约8.5%、6.9%、3.7%的Max F-measure。</p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2401.00248" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
+                        <a href="https://github.com/Tennine2077/DIS-SAM" target="_blank"><i class="fab fa-github"></i> 代码</a>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <!-- Experience -->
-            <section class="card">
-                <h2 class="card-title"><i class="fas fa-briefcase"></i> 实习经历</h2>
-                <div class="card-content">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>阿里妈妈</h3>
-                            <p class="degree">研究型实习生 | 多模态大语言模型</p>
-                            <p class="date"><i class="far fa-calendar-alt"></i> 2025年5月 - 2026年2月</p>
-                            <p class="experience-desc" style="margin-top: 10px; font-size: 14px; color: #a0a0a0;">
-                                在阿里妈妈担任研究型实习生，负责多模态大模型在电商内容理解和商业意图识别方向的研究与应用。深入分析电商短视频数据与用户需求，参与设计并验证新型 MLLMs 算法，并在团队内进行多模态前沿技术分享，助力技术影响力建设。
-                            </p>
-                            <ul style="margin-top: 10px; font-size: 13px; color: #a0a0a0; line-height: 1.8; padding-left: 20px;">
-                                <li><strong>高分辨率 MLLMs 理解突破：</strong>揭示了 MLLMs 在高分辨率 VQA 中的性能瓶颈为背景干扰问题，提出免训练层次化解耦方法 HiDe。通过注意力解耦和布局保留策略，在 V*Bench 实现从 79.1→92.1 的跃升，性能甚至超越 RL 训练方案。</li>
-                                <li><strong>电商广告视频多模态基准构建：</strong>主导构建首个面向电商短视频商业意图理解的视频 VQA 基准 E-VAds，完成 3,961 条高质量广告视频的采集与清洗；设计多智能体协同流水线自动生成 19,785 条开放式问答对，填补垂直领域评测空白。</li>
-                                <li><strong>商业意图识别模型训练与优化：</strong>基于 E-VAds 采用 SFT 冷启动+RL 强化学习训练范式，创新提出 MG-GRPO 多粒度奖励策略，通过早期平滑探索与后期非线性激励耦合，有效缓解复杂商业意图推理中的奖励稀疏与收敛不稳定问题。基于该基准训练的 E-VAds-R1 模型仅需数百条样本冷启动，即在商业意图推理任务上实现+109.2%的显著性能跃升。</li>
-                            </ul>
-                        </div>
+            <!-- UML -->
+            <div class="pub-item">
+                <div class="pub-thumb"><img src="UML.png" alt="UML"></div>
+                <div class="pub-info">
+                    <span class="pub-venue">MICCAI 2023</span>
+                    <p class="pub-title">基于不确定性感知互学习的医学图像联合分类与分割</p>
+                    <p class="pub-authors">任凯，邹可，<strong>柳先杰</strong>，等</p>
+                    <p class="pub-desc">提出不确定性感知互学习（UML）框架，通过证据深度学习提供置信度估计，构建不确定性导航解码器和指导器，在公开数据集上准确性和鲁棒性均优于现有方法。</p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2303.10049" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
+                        <a href="https://github.com/KarryRen/UML" target="_blank"><i class="fab fa-github"></i> 代码</a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
 
-            <!-- Publications -->
-            <section class="card">
-                <h2 class="card-title"><i class="fas fa-file-alt"></i> 学术论文</h2>
-                <div class="card-content">
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>HiDe</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://arxiv.org/abs/2510.00054" target="_blank" class="project-link">
-                                    <i class="fas fa-file-pdf"></i> arXiv
-                                </a>
-                                <a href="https://tennine2077.github.io/HiDe.github.io/" target="_blank" class="project-link">
-                                    <i class="fas fa-globe"></i> 项目
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">ICML 2026</span> HiDe：通过层次化解耦重新思考高分辨率MLLM中的放大方法</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="HiDe.png" alt="HiDe" style="width: 100%; display: block;">
-                        </div>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>柳先杰</strong>，胡依漫，邹一雄，等</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            针对MLLMs在高分辨率图像上表现不佳的问题，此前归因于感知不足并采用"放大"策略。通过层次化解耦分析发现真正瓶颈是背景干扰而非物体大小，据此提出无需训练的HiDe框架。利用Token级注意力解耦（TAD）定位关键区域，并通过布局保持解耦（LPD）构建紧凑表示。HiDe在V*Bench上达到SOTA（Qwen2.5-VL 7B：92.1），超越RL方法，内存消耗降75%。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">MLLM</span>
-                            <span class="tag">高分辨率</span>
-                            <span class="tag">视觉语言</span>
-                        </div>
-                    </div>
+        <!-- Experience -->
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-briefcase"></i> 实习经历</h2>
+            <div class="exp-item">
+                <div class="exp-role">阿里妈妈 <span>— 研究型实习生，多模态大语言模型</span></div>
+                <div class="exp-date">2025.05 – 2026.02</div>
+            </div>
+        </div>
 
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>E-VAds</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://arxiv.org/abs/2602.08355" target="_blank" class="project-link">
-                                    <i class="fas fa-file-pdf"></i> arXiv
-                                </a>
-                                <a href="https://github.com/TaobaoTmall-AlgorithmProducts/E-VAds_Benchmark" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">ICML 2026</span> E-VAds：面向MLLM的电商短视频理解基准</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="E-VAds.png" alt="E-VAds" style="width: 100%; display: block;">
-                        </div>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>柳先杰</strong>，胡依漫，吴亮，等</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            针对电商短视频缺乏专用基准、现有模型难处理开放商业意图推理的问题，本文提出首个电商短视频理解基准E-VAds。该基准包含3,961条高质量视频与19,785个开放问答，覆盖感知与推理两大维度五大任务，涵盖基础感知、跨模态检测、营销逻辑、消费者洞察与合规审查。本文设计多智能体标注系统保障标注质量，并提出MG-GRPO多粒度奖励策略。E-VAds-R1仅需数百样本即实现商业意图推理109.2%性能提升。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">MLLM</span>
-                            <span class="tag">电商</span>
-                            <span class="tag">基准</span>
-                        </div>
-                    </div>
+        <!-- Education -->
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> 教育经历</h2>
+            <div class="edu-item">
+                <div class="edu-degree">四川大学 <span>— 硕士，智能科学与技术</span></div>
+                <div class="edu-date">2024 – 2027</div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-degree">四川大学 <span>— 本科，计算机科学与技术，排名：3/315 (&lt; 1%)</span></div>
+                <div class="edu-date">2020 – 2024</div>
+            </div>
+        </div>
 
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>PDFNet</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://arxiv.org/abs/2503.06100" target="_blank" class="project-link">
-                                    <i class="fas fa-file-pdf"></i> arXiv
-                                </a>
-                                <a href="https://tennine2077.github.io/PDFNet.github.io/" target="_blank" class="project-link">
-                                    <i class="fas fa-globe"></i> 项目
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">CVPR 2026</span> 基于深度完整性先验与细粒度Patch策略的高精度二分图像分割</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="PDFNet.png" alt="PDFNet" style="width: 100%; display: block;">
-                        </div>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>柳先杰</strong>，傅可人，赵启军</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            针对高分辨率二分图像分割（DIS）中非扩散方法精度不足、扩散方法计算昂贵的困境，本文引入单目伪深度图作为结构先验。我们发现前景深度方差显著低于背景（深度完整性先验），并设计多模态融合架构以及Depth Integrity-Prior Loss增强结构感知。提出的PDFNet以<50%参数量在DIS-5K达到SOTA，并且推理速度相较于扩散模型快约5倍。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">计算机视觉</span>
-                            <span class="tag">图像分割</span>
-                            <span class="tag">深度先验</span>
-                        </div>
-                    </div>
+        <!-- Projects -->
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-code"></i> 项目经历</h2>
 
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>DIS-SAM</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://arxiv.org/abs/2401.00248" target="_blank" class="project-link">
-                                    <i class="fas fa-file-pdf"></i> arXiv
-                                </a>
-                                <a href="https://github.com/Tennine2077/DIS-SAM" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">ICME 2025</span> 推动Segment Anything Model实现高精度二分图像分割</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="DIS-SAM.png" alt="DIS-SAM" style="width: 100%; display: block;">
-                        </div>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>柳先杰</strong>，傅可人，蒋遥，赵启军</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            本文提出一种两阶段框架DIS-SAM，将SAM与IS-Net级联实现高精度二分图像分割（DIS），在保留SAM可提示交互特性的同时显著提升边界细节精度。引入参数正交化与GT数据增强策略增强泛化能力。在DIS-5K数据集上，相比原始SAM、HQ-SAM、Pi-SAM分别提升约8.5%、6.9%、3.7%的Max F-measure，并在零样本场景展现出良好泛化性。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">SAM</span>
-                            <span class="tag">图像分割</span>
-                            <span class="tag">基础模型</span>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>UML</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://arxiv.org/abs/2303.10049" target="_blank" class="project-link">
-                                    <i class="fas fa-file-pdf"></i> arXiv
-                                </a>
-                                <a href="https://github.com/KarryRen/UML" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">MICCAI 2023</span> 基于不确定性感知互学习的医学图像联合分类与分割</p>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;">任凯，邹可，<strong>柳先杰</strong>，等</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            针对医学图像分析中分类与分割任务的联合学习忽略特征可靠性的问题，本文提出不确定性感知互学习（UML）框架。通过证据深度学习提供图像级和像素级置信度，构建不确定性导航解码器以更好地利用互学习特征生成分割结果，并提出不确定性指导器筛选可靠掩码用于分类。UML能够为分类和分割的每个环节提供置信度估计，在公开数据集上的实验表明其在准确性和鲁棒性方面均优于现有方法。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">医学影像</span>
-                            <span class="tag">不确定性学习</span>
-                            <span class="tag">图像分割</span>
-                        </div>
-                    </div>
+            <div class="proj-item">
+                <div class="proj-header">
+                    <h3>TennineClaw</h3>
+                    <a href="https://github.com/Tennine2077/TennineClaw" target="_blank" style="font-size: 13px;"><i class="fab fa-github"></i> GitHub</a>
                 </div>
-            </section>
-
-            <!-- Projects -->
-            <section class="card">
-                <h2 class="card-title"><i class="fas fa-folder-open"></i> 项目经历</h2>
-                <div class="card-content">
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>TennineClaw</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://github.com/Tennine2077/TennineClaw" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">v1.1.2</span> 智能终端助手 Web 平台 — 基于 AI 的代码分析与任务执行平台</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="TennineClaw.png" alt="TennineClaw" style="width: 100%; display: block;">
-                        </div>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            TennineClaw 是一个功能丰富的 AI 编程助手 Web 平台，由柳先杰独立开发。支持流式对话、19+ 内置工具（命令执行、文件操作、Grep 搜索、Git 集成等）、Smart/Plan 双交互模式、自定义角色系统（动态扫描 personas 目录 + soul.md 灵魂定义）、分支会话（从任意 AI 回复创建独立会话分支）、上下文压缩（Composer 机制防止 Token 溢出）、会话管理（自动保存+分组搜索）、智能 Prompt 优化等核心功能。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">AI</span>
-                            <span class="tag">Web</span>
-                            <span class="tag">全栈开发</span>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>Awesome-Dichotomous-Image-Segmentation</h3>
-                            <a href="https://github.com/Tennine2077/Awesome-Dichotomous-Image-Segmentation" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                        <p class="project-desc">二分图像分割（DIS）领域的精选资源合集，包含论文、数据集、代码实现等内容。</p>
-                        <div class="project-tags">
-                            <span class="tag">计算机视觉</span>
-                            <span class="tag">图像分割</span>
-                            <span class="tag">资源合集</span>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>国家级交叉学科大创</h3>
-                        </div>
-                        <p class="project-desc">基于多模态的骨关节置换术后感染诊断</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            联合华西医院影像科构建聚焦骨关节置换术后感染诊断的图文多模态数据集及判别算法，辅助医生决策。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">医学影像</span>
-                            <span class="tag">多模态学习</span>
-                        </div>
-                        <p style="font-size: 12px; color: #888; margin-top: 8px;">
-                            <strong>成果：</strong>ICMSP会议论文（第一作者），Sensors SCI Q2（第三作者），发明专利一项，软件著作权一项
-                        </p>
-                    </div>
-
+                <p class="proj-desc">AI 编程助手 Web 平台，独立开发。支持流式对话、19+ 内置工具、Smart/Plan 双交互模式、自定义角色系统、分支会话、上下文压缩等核心功能。</p>
+                <div class="proj-tags">
+                    <span>Python</span><span>FastAPI</span><span>AI</span><span>全栈开发</span>
                 </div>
-            </section>
+            </div>
 
-            <!-- Honors -->
-            <section class="card">
-                <h2 class="card-title"><i class="fas fa-trophy"></i> 荣誉奖项</h2>
-                <div class="card-content">
-                    <div class="honor-list" style="display: flex; flex-direction: column; gap: 10px;">
-                        <div class="honor-item" style="display: flex; align-items: center; gap: 10px; padding: 12px 15px; background: rgba(0,0,0,0.2); border-radius: 10px;">
-                            <i class="fas fa-medal" style="color: #e94560;"></i>
-                            <span style="font-size: 14px;">APMCM亚太地区大学生数学建模竞赛 三等奖</span>
-                        </div>
-                        <div class="honor-item" style="display: flex; align-items: center; gap: 10px; padding: 12px 15px; background: rgba(0,0,0,0.2); border-radius: 10px;">
-                            <i class="fas fa-medal" style="color: #e94560;"></i>
-                            <span style="font-size: 14px;">"挑战杯"四川大学大学生课外学术科技作品竞赛 三等奖</span>
-                        </div>
-                        <div class="honor-item" style="display: flex; align-items: center; gap: 10px; padding: 12px 15px; background: rgba(0,0,0,0.2); border-radius: 10px;">
-                            <i class="fas fa-medal" style="color: #e94560;"></i>
-                            <span style="font-size: 14px;">"互联网+"大学生创新创业大赛 二等奖</span>
-                        </div>
-                        <div class="honor-item" style="display: flex; align-items: center; gap: 10px; padding: 12px 15px; background: rgba(0,0,0,0.2); border-radius: 10px;">
-                            <i class="fas fa-medal" style="color: #e94560;"></i>
-                            <span style="font-size: 14px;">四川大学研究生一等奖助学金</span>
-                        </div>
-                    </div>
+            <div class="proj-item">
+                <div class="proj-header">
+                    <h3>Awesome-Dichotomous-Image-Segmentation</h3>
+                    <a href="https://github.com/Tennine2077/Awesome-Dichotomous-Image-Segmentation" target="_blank" style="font-size: 13px;"><i class="fab fa-github"></i> GitHub</a>
                 </div>
-            </section>
+                <p class="proj-desc">二分图像分割（DIS）领域的精选资源合集，包含论文、数据集、代码实现等内容。</p>
+                <div class="proj-tags">
+                    <span>计算机视觉</span><span>图像分割</span><span>资源合集</span>
+                </div>
+            </div>
 
-            <!-- Footer -->
-            <footer class="footer">
-                <p>© 2026 柳先杰. Made with <i class="fas fa-heart" style="color: #e74c3c;"></i> and GitHub Pages</p>
-            </footer>
-        </main>
+            <div class="proj-item">
+                <div class="proj-header">
+                    <h3>国家级交叉学科大创</h3>
+                </div>
+                <p class="proj-desc">基于多模态的骨关节置换术后感染诊断。联合华西医院影像科构建图文多模态数据集及判别算法。成果：ICMSP会议论文（第一作者），Sensors SCI Q2（第三作者），发明专利一项，软件著作权一项。</p>
+                <div class="proj-tags">
+                    <span>医学影像</span><span>多模态学习</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Honors -->
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-trophy"></i> 荣誉奖项</h2>
+            <ul class="honor-list">
+                <li><i class="fas fa-award"></i> 四川大学研究生一等奖助学金</li>
+                <li><i class="fas fa-award"></i> "互联网+"大学生创新创业大赛 二等奖</li>
+                <li><i class="fas fa-award"></i> APMCM亚太地区大学生数学建模竞赛 三等奖</li>
+                <li><i class="fas fa-award"></i> "挑战杯"四川大学大学生课外学术科技作品竞赛 三等奖</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 柳先杰. Hosted on GitHub Pages.</p>
+        </footer>
+
     </div>
 </body>
 </html>

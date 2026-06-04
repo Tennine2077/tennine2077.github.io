@@ -9,358 +9,216 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="avatar-container">
-                <img src="05d421fe-8522-491f-8809-6c3c05e2db90.png" alt="Avatar" class="avatar">
-            </div>
-            <h1 class="name">Xianjie Liu</h1>
-            <p class="title">M.S. Student in AI</p>
-            <p class="subtitle">Sichuan University</p>
+    <div class="page">
 
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Sichuan University</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Sichuan, China</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:liuxianjie.scu@vip.163.com">liuxianjie.scu@vip.163.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/Tennine2077" target="_blank">Tennine2077</a>
+        <!-- Language Switch -->
+        <a href="index_zh.html" class="lang-switch">
+            <i class="fas fa-globe"></i> 中文
+        </a>
+
+        <!-- Bio -->
+        <div class="bio">
+            <img src="05d421fe-8522-491f-8809-6c3c05e2db90.png" alt="Xianjie Liu" class="bio-photo">
+            <div class="bio-info">
+                <h1 class="bio-name">Xianjie Liu</h1>
+                <p class="bio-title">M.S. Student in AI, Sichuan University</p>
+                <p class="bio-desc">
+                    I am a Master's student in Intelligence Science and Technology at Sichuan University, specializing in deep learning, computer vision, and multimodal large language models. My research interests include high-precision dichotomous image segmentation, multimodal interaction and understanding. From May 2025 to February 2026, I worked as a Research Intern at Alimama, focusing on MLLMs for e-commerce content understanding.
+                </p>
+                <div class="bio-links">
+                    <a href="mailto:liuxianjie.scu@vip.163.com"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://github.com/Tennine2077" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://scholar.google.com/" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
                 </div>
             </div>
+        </div>
 
-            <div class="section">
-                <h2 class="section-title"><i class="fas fa-code"></i> Skills</h2>
-                <div class="skills">
-                    <div class="skill-tag">Python</div>
-                    <div class="skill-tag">PyTorch</div>
-                    <div class="skill-tag">Deep Learning</div>
-                    <div class="skill-tag">Computer Vision</div>
-                    <div class="skill-tag">Image Segmentation</div>
-                    <div class="skill-tag">MLLM</div>
+        <!-- News -->
+        <div class="section">
+            <h2 class="section-title"><i class="far fa-newspaper"></i> News</h2>
+            <ul class="news-list">
+                <li>
+                    <span class="news-date">2026.06</span>
+                    <span>Two papers (<strong>HiDe</strong> and <strong>E-VAds</strong>) accepted by <span class="news-badge">ICML 2026</span></span>
+                </li>
+                <li>
+                    <span class="news-date">2026.03</span>
+                    <span>One paper (<strong>PDFNet</strong>) accepted by <span class="news-badge">CVPR 2026</span></span>
+                </li>
+                <li>
+                    <span class="news-date">2025.05</span>
+                    <span>Started research internship at <strong>Alimama</strong>, working on multimodal large language models.</span>
+                </li>
+                <li>
+                    <span class="news-date">2025.01</span>
+                    <span>One paper (<strong>DIS-SAM</strong>) accepted by <span class="news-badge">ICME 2025</span></span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Publications -->
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-file-alt"></i> Publications</h2>
+
+            <!-- HiDe -->
+            <div class="pub-item">
+                <div class="pub-thumb">
+                    <img src="HiDe.png" alt="HiDe">
+                </div>
+                <div class="pub-info">
+                    <span class="pub-venue">ICML 2026</span>
+                    <p class="pub-title">HiDe: Rethinking The Zoom-IN Method in High Resolution MLLMs via Hierarchical Decoupling</p>
+                    <p class="pub-authors"><strong>Xianjie Liu</strong>, Yiman Hu, Yixiong Zou, et al.</p>
+                    <p class="pub-desc">We discover the real bottleneck of MLLMs on high-resolution images is background interference rather than object size. HiDe uses Token-level Attention Decoupling and Layout Preservation Decoupling to achieve SOTA on V*Bench (92.1) with 75% memory reduction.</p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2510.00054" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
+                        <a href="https://tennine2077.github.io/HiDe.github.io/" target="_blank"><i class="fas fa-globe"></i> Project</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="section">
-                <h2 class="section-title"><i class="fas fa-language"></i> Languages</h2>
-                <div class="languages">
-                    <div class="language-item">
-                        <span>Chinese (Native)</span>
-                        <div class="language-bar"><div class="language-level" style="width: 100%"></div></div>
-                    </div>
-                    <div class="language-item">
-                        <span>English</span>
-                        <div class="language-bar"><div class="language-level" style="width: 80%"></div></div>
+            <!-- E-VAds -->
+            <div class="pub-item">
+                <div class="pub-thumb">
+                    <img src="E-VAds.png" alt="E-VAds">
+                </div>
+                <div class="pub-info">
+                    <span class="pub-venue">ICML 2026</span>
+                    <p class="pub-title">E-VAds: An E-commerce Short Videos Understanding Benchmark for MLLMs</p>
+                    <p class="pub-authors"><strong>Xianjie Liu</strong>, Yiman Hu, Liang Wu, et al.</p>
+                    <p class="pub-desc">The first e-commerce short video understanding benchmark with 3,961 videos and 19,785 QA pairs. We propose MG-GRPO multi-granularity reward strategy. E-VAds-R1 achieves +109.2% performance leap in commercial intent reasoning.</p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2602.08355" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
+                        <a href="https://github.com/TaobaoTmall-AlgorithmProducts/E-VAds_Benchmark" target="_blank"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
             </div>
-        </aside>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Language Switch -->
-            <div style="text-align: right; margin-bottom: 15px;">
-                <a href="index_zh.html" class="lang-switch" style="color: #4f46e5; text-decoration: none; font-size: 14px;">
-                    <i class="fas fa-globe"></i> 中文
-                </a>
+            <!-- PDFNet -->
+            <div class="pub-item">
+                <div class="pub-thumb">
+                    <img src="PDFNet.png" alt="PDFNet">
+                </div>
+                <div class="pub-info">
+                    <span class="pub-venue">CVPR 2026</span>
+                    <p class="pub-title">High-Precision Dichotomous Image Segmentation via Depth Integrity-Prior and Fine-Grained Patch Strategy</p>
+                    <p class="pub-authors"><strong>Xianjie Liu</strong>, Keren Fu, Qijun Zhao</p>
+                    <p class="pub-desc">Introduces monocular pseudo-depth maps as structural priors for DIS. PDFNet achieves SOTA on DIS-5K with less than 50% parameters and ~5x faster inference compared to diffusion models.</p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2503.06100" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
+                        <a href="https://tennine2077.github.io/PDFNet.github.io/" target="_blank"><i class="fas fa-globe"></i> Project</a>
+                    </div>
+                </div>
             </div>
 
-            
-            <!-- About Me -->
-            <section class="card">
-                <h2 class="card-title"><i class="fas fa-user"></i> About Me</h2>
-                <div class="card-content">
-                    <p>I am a Master's student in Intelligence Science and Technology at Sichuan University, specializing in deep learning, computer vision, and multimodal large language models. My research interests include high-precision dichotomous image segmentation, multimodal interaction and understanding.</p>
-                    <p>From May 2025 to February 2026, I worked as a Research Intern at Alimama, focusing on multimodal large models for e-commerce content understanding and commercial intent recognition. I developed the HiDe framework for high-resolution image understanding and built the E-VAds benchmark for e-commerce short video analysis.</p>
+            <!-- DIS-SAM -->
+            <div class="pub-item">
+                <div class="pub-thumb">
+                    <img src="DIS-SAM.png" alt="DIS-SAM">
                 </div>
-            </section>
-
-            <!-- Education -->
-            <section class="card">
-                <h2 class="card-title"><i class="fas fa-graduation-cap"></i> Education</h2>
-                <div class="card-content">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Sichuan University</h3>
-                            <p class="degree">M.S. in Intelligence Science and Technology</p>
-                            <p class="date"><i class="far fa-calendar-alt"></i> 2024 - 2027</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Sichuan University</h3>
-                            <p class="degree">B.S. in Computer Science and Technology | Rank: 3/315 (< 1%)</p>
-                            <p class="date"><i class="far fa-calendar-alt"></i> 2020 - 2024</p>
-                        </div>
+                <div class="pub-info">
+                    <span class="pub-venue">ICME 2025</span>
+                    <p class="pub-title">Promoting Segment Anything Model towards Highly Accurate Dichotomous Image Segmentation</p>
+                    <p class="pub-authors"><strong>Xianjie Liu</strong>, Keren Fu, Yao Jiang, Qijun Zhao</p>
+                    <p class="pub-desc">A two-stage framework integrating SAM with IS-Net for high-accuracy DIS. Advances SAM, HQ-SAM, and Pi-SAM by ~8.5%, ~6.9%, and ~3.7% Max F-measure on DIS-5K.</p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2401.00248" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
+                        <a href="https://github.com/Tennine2077/DIS-SAM" target="_blank"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <!-- Experience -->
-            <section class="card">
-                <h2 class="card-title"><i class="fas fa-briefcase"></i> Experience</h2>
-                <div class="card-content">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Alimama</h3>
-                            <p class="degree">Research Intern | Multimodal Large Language Models</p>
-                            <p class="date"><i class="far fa-calendar-alt"></i> May 2025 - Feb 2026</p>
-                            <p class="experience-desc" style="margin-top: 10px; font-size: 14px; color: #a0a0a0;">
-                                As a Research Intern at Alimama, I was responsible for research and application of multimodal large models in e-commerce content understanding and commercial intent recognition. I conducted in-depth analysis of e-commerce short video data and user needs, participated in designing and validating novel MLLMs algorithms, and delivered multimodal frontier technology sharing sessions within the team to contribute to technical influence building.
-                            </p>
-                            <ul style="margin-top: 10px; font-size: 13px; color: #a0a0a0; line-height: 1.8; padding-left: 20px;">
-                                <li><strong>High-Resolution MLLMs Understanding Breakthrough:</strong> Revealed that the performance bottleneck of MLLMs in high-resolution VQA is the background interference problem, proposed a training-free hierarchical decoupling method HiDe. Through attention decoupling and layout preservation strategies, achieved a leap from 79.1→92.1 on V*Bench, surpassing even RL training approaches.</li>
-                                <li><strong>E-commerce Advertising Video Multimodal Benchmark Construction:</strong> Led the construction of the first video VQA benchmark E-VAds for e-commerce short video commercial intent understanding, completed the collection and cleaning of 3,961 high-quality advertising videos; designed a multi-agent collaborative pipeline to automatically generate 19,785 open-ended QA pairs, filling the evaluation gap in the vertical domain.</li>
-                                <li><strong>Commercial Intent Recognition Model Training and Optimization:</strong> Based on E-VAds, adopted SFT cold start + RL reinforcement learning training paradigm, innovatively proposed MG-GRPO multi-granularity reward strategy, coupling early smooth exploration with late nonlinear incentives to effectively alleviate reward sparsity and convergence instability in complex commercial intent reasoning. The E-VAds-R1 model trained on this benchmark achieved a significant +109.2% performance leap in commercial intent reasoning tasks with only hundreds of samples for cold start.</li>
-                            </ul>
-                        </div>
+            <!-- UML -->
+            <div class="pub-item">
+                <div class="pub-thumb"><img src="UML.png" alt="UML"></div>
+                <div class="pub-info">
+                    <span class="pub-venue">MICCAI 2023</span>
+                    <p class="pub-title">Uncertainty-informed Mutual Learning for Joint Medical Image Classification and Segmentation</p>
+                    <p class="pub-authors">Kai Ren, Ke Zou, <strong>Xianjie Liu</strong>, etc.</p>
+                    <p class="pub-desc">A novel UML framework for reliable medical image analysis. Uses evidential deep learning for confidence estimation and proposes Uncertainty Navigator Decoder and Uncertainty Instructor for joint classification and segmentation.</p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2303.10049" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
+                        <a href="https://github.com/KarryRen/UML" target="_blank"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
 
-            <!-- Publications -->
-            <section class="card">
-                <h2 class="card-title"><i class="fas fa-file-alt"></i> Publications</h2>
-                <div class="card-content">
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>HiDe</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://arxiv.org/abs/2510.00054" target="_blank" class="project-link">
-                                    <i class="fas fa-file-pdf"></i> arXiv
-                                </a>
-                                <a href="https://tennine2077.github.io/HiDe.github.io/" target="_blank" class="project-link">
-                                    <i class="fas fa-globe"></i> Project
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">ICML 2026</span> HiDe: Rethinking The Zoom-IN Method in High Resolution MLLMs via Hierarchical Decoupling</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="HiDe.png" alt="HiDe" style="width: 100%; display: block;">
-                        </div>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>Xianjie Liu</strong>, Yiman Hu, Yixiong Zou, et al.</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            Addressing the poor performance of MLLMs on high-resolution images, previous work attributed this to insufficient perception and adopted "zoom-in" strategies. Through hierarchical decoupling analysis, we discovered the real bottleneck is background interference rather than object size. We propose HiDe, a training-free framework that uses Token-level Attention Decoupling (TAD) to locate key regions and Layout Preservation Decoupling (LPD) to build compact representations. HiDe achieves SOTA on V*Bench (Qwen2.5-VL 7B: 92.1), surpassing RL methods with 75% memory reduction.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">MLLM</span>
-                            <span class="tag">High Resolution</span>
-                            <span class="tag">Vision-Language</span>
-                        </div>
-                    </div>
+        <!-- Experience -->
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="exp-item">
+                <div class="exp-role">Alimama <span>— Research Intern, Multimodal Large Language Models</span></div>
+                <div class="exp-date">May 2025 – Feb 2026</div>
+            </div>
+        </div>
 
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>E-VAds</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://arxiv.org/abs/2602.08355" target="_blank" class="project-link">
-                                    <i class="fas fa-file-pdf"></i> arXiv
-                                </a>
-                                <a href="https://github.com/TaobaoTmall-AlgorithmProducts/E-VAds_Benchmark" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">ICML 2026</span> E-VAds: An E-commerce Short Videos Understanding Benchmark for MLLMs</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="E-VAds.png" alt="E-VAds" style="width: 100%; display: block;">
-                        </div>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>Xianjie Liu</strong>, Yiman Hu, Liang Wu, et al.</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            Addressing the lack of dedicated benchmarks for e-commerce short videos and existing models' difficulty in handling open commercial intent reasoning, we propose E-VAds, the first e-commerce short video understanding benchmark. It contains 3,961 high-quality videos and 19,785 open-ended QA pairs, covering five tasks across perception and reasoning dimensions: basic perception, cross-modal detection, marketing logic, consumer insight, and compliance review. We design a multi-agent annotation system and propose MG-GRPO multi-granularity reward strategy. E-VAds-R1 achieves 109.2% performance improvement in commercial intent reasoning with only hundreds of samples.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">MLLM</span>
-                            <span class="tag">E-commerce</span>
-                            <span class="tag">Benchmark</span>
-                        </div>
-                    </div>
+        <!-- Education -->
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="edu-item">
+                <div class="edu-degree">Sichuan University <span>— M.S. in Intelligence Science and Technology</span></div>
+                <div class="edu-date">2024 – 2027</div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-degree">Sichuan University <span>— B.S. in Computer Science and Technology, Rank: 3/315 (&lt; 1%)</span></div>
+                <div class="edu-date">2020 – 2024</div>
+            </div>
+        </div>
 
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>PDFNet</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://arxiv.org/abs/2503.06100" target="_blank" class="project-link">
-                                    <i class="fas fa-file-pdf"></i> arXiv
-                                </a>
-                                <a href="https://tennine2077.github.io/PDFNet.github.io/" target="_blank" class="project-link">
-                                    <i class="fas fa-globe"></i> Project
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">CVPR 2026</span> High-Precision Dichotomous Image Segmentation via Depth Integrity-Prior and Fine-Grained Patch Strategy</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="PDFNet.png" alt="PDFNet" style="width: 100%; display: block;">
-                        </div>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>Xianjie Liu</strong>, Keren Fu, Qijun Zhao</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            Addressing the dilemma of insufficient precision in non-diffusion methods and expensive computation in diffusion methods for high-resolution dichotomous image segmentation (DIS), this paper introduces monocular pseudo-depth maps as structural priors. We discover that foreground depth variance is significantly lower than background (Depth Integrity-Prior), and design a multimodal fusion architecture with Depth Integrity-Prior Loss to enhance structural perception. The proposed PDFNet achieves SOTA on DIS-5K with less than 50% parameters and approximately 5× faster inference compared to diffusion models.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Computer Vision</span>
-                            <span class="tag">Image Segmentation</span>
-                            <span class="tag">Depth Prior</span>
-                        </div>
-                    </div>
+        <!-- Projects -->
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-code"></i> Projects</h2>
 
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>DIS-SAM</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://arxiv.org/abs/2401.00248" target="_blank" class="project-link">
-                                    <i class="fas fa-file-pdf"></i> arXiv
-                                </a>
-                                <a href="https://github.com/Tennine2077/DIS-SAM" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">ICME 2025</span> Promoting Segment Anything Model towards Highly Accurate Dichotomous Image Segmentation</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="DIS-SAM.png" alt="DIS-SAM" style="width: 100%; display: block;">
-                        </div>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;"><strong>Xianjie Liu</strong>, Keren Fu, Yao Jiang, Qijun Zhao</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            The Segment Anything Model (SAM) represents a significant breakthrough in foundation models for computer vision. However, its segmentation masks lack fine-grained details, particularly in accurately delineating object boundaries. We propose DIS-SAM, a two-stage framework that integrates SAM with IS-Net to achieve highly accurate dichotomous image segmentation while maintaining SAM's promptable design. We introduce parameter orthogonalization and GT data augmentation strategies to enhance generalization. DIS-SAM significantly advances SAM, HQ-SAM, and Pi-SAM by ~8.5%, ~6.9%, and ~3.7% maximum F-measure on DIS-5K dataset.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">SAM</span>
-                            <span class="tag">Image Segmentation</span>
-                            <span class="tag">Foundation Model</span>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>UML</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://arxiv.org/abs/2303.10049" target="_blank" class="project-link">
-                                    <i class="fas fa-file-pdf"></i> arXiv
-                                </a>
-                                <a href="https://github.com/KarryRen/UML" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">MICCAI 2023</span> Uncertainty-informed Mutual Learning for Joint Medical Image Classification and Segmentation</p>
-                        <p class="authors" style="font-size: 13px; color: #4f46e5; margin-top: 8px;">Kai Ren, Ke Zou, <strong>Xianjie Liu</strong>, etc.</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            We propose a novel Uncertainty-informed Mutual Learning (UML) framework for reliable and interpretable medical image analysis. UML introduces reliability to joint classification and segmentation tasks by leveraging mutual learning with uncertainty. We use evidential deep learning to provide image-level and pixel-wise confidences, construct an Uncertainty Navigator Decoder for better mutual feature utilization, and propose an Uncertainty Instructor to screen reliable masks for classification. Experiments on public datasets demonstrate that UML outperforms existing methods in both accuracy and robustness.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Medical Imaging</span>
-                            <span class="tag">Uncertainty Learning</span>
-                            <span class="tag">Image Segmentation</span>
-                        </div>
-                    </div>
+            <div class="proj-item">
+                <div class="proj-header">
+                    <h3>TennineClaw</h3>
+                    <a href="https://github.com/Tennine2077/TennineClaw" target="_blank" style="font-size: 13px;"><i class="fab fa-github"></i> GitHub</a>
                 </div>
-            </section>
-
-            <!-- Projects -->
-            <section class="card">
-                <h2 class="card-title"><i class="fas fa-folder-open"></i> Projects</h2>
-                <div class="card-content">
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>TennineClaw</h3>
-                            <div style="display: flex; gap: 15px;">
-                                <a href="https://github.com/Tennine2077/TennineClaw" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-desc"><span class="paper-badge">v1.1.2</span> Intelligent Terminal Assistant Web Platform — AI-Powered Code Analysis & Task Execution Platform</p>
-                        <div class="paper-image" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-                            <img src="TennineClaw.png" alt="TennineClaw" style="width: 100%; display: block;">
-                        </div>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            TennineClaw is a feature-rich AI programming assistant web platform, independently developed by Xianjie Liu. It features streaming conversations, 19+ built-in tools (command execution, file operations, Grep search, Git integration, etc.), Smart/Plan dual interaction modes, a custom role system (dynamic personas directory scanning + soul.md soul definitions), branch sessions (create independent branches from any AI reply), context compression (Composer mechanism to prevent token overflow), session management (auto-save + grouping/search), and smart prompt optimization.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">AI</span>
-                            <span class="tag">Web</span>
-                            <span class="tag">Full Stack</span>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>Awesome-Dichotomous-Image-Segmentation</h3>
-                            <a href="https://github.com/Tennine2077/Awesome-Dichotomous-Image-Segmentation" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                        <p class="project-desc">A curated collection of resources for Dichotomous Image Segmentation (DIS), including papers, datasets, and code implementations.</p>
-                        <div class="project-tags">
-                            <span class="tag">Computer Vision</span>
-                            <span class="tag">Image Segmentation</span>
-                            <span class="tag">Awesome List</span>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-header">
-                            <h3>National-level Interdisciplinary Innovation Project</h3>
-                        </div>
-                        <p class="project-desc">Multimodal-based Diagnosis of Periprosthetic Joint Infection after Arthroplasty</p>
-                        <p class="abstract" style="font-size: 13px; color: #a0a0a0; margin-top: 10px; line-height: 1.6;">
-                            Collaborated with West China Hospital Radiology Department to build a multimodal image-text dataset focusing on periprosthetic joint infection diagnosis and develop discriminative algorithms to assist clinical decision-making. 
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Medical Imaging</span>
-                            <span class="tag">Multimodal Learning</span>
-                        </div>
-                        <p style="font-size: 12px; color: #888; margin-top: 8px;">
-                            <strong>Outputs:</strong> ICMSP Conference Paper (1st Author), Sensors SCI Q2 (3rd Author), 1 Patent, 1 Software Copyright
-                        </p>
-                    </div>
-
+                <p class="proj-desc">AI-powered code analysis & task execution web platform. Features streaming conversations, 19+ built-in tools, Smart/Plan dual modes, custom role system, branch sessions, and context compression.</p>
+                <div class="proj-tags">
+                    <span>Python</span><span>FastAPI</span><span>AI</span><span>Full Stack</span>
                 </div>
-            </section>
+            </div>
 
-            <!-- Honors -->
-            <section class="card">
-                <h2 class="card-title"><i class="fas fa-trophy"></i> Honors & Awards</h2>
-                <div class="card-content">
-                    <div class="honor-list" style="display: flex; flex-direction: column; gap: 10px;">
-                        <div class="honor-item" style="display: flex; align-items: center; gap: 10px; padding: 12px 15px; background: rgba(0,0,0,0.2); border-radius: 10px;">
-                            <i class="fas fa-medal" style="color: #e94560;"></i>
-                            <span style="font-size: 14px;">Third Prize, APMCM Asia-Pacific Mathematical Contest in Modeling</span>
-                        </div>
-                        <div class="honor-item" style="display: flex; align-items: center; gap: 10px; padding: 12px 15px; background: rgba(0,0,0,0.2); border-radius: 10px;">
-                            <i class="fas fa-medal" style="color: #e94560;"></i>
-                            <span style="font-size: 14px;">Third Prize, "Challenge Cup" Sichuan University Academic Works Competition</span>
-                        </div>
-                        <div class="honor-item" style="display: flex; align-items: center; gap: 10px; padding: 12px 15px; background: rgba(0,0,0,0.2); border-radius: 10px;">
-                            <i class="fas fa-medal" style="color: #e94560;"></i>
-                            <span style="font-size: 14px;">Second Prize, "Internet+" Innovation and Entrepreneurship Competition</span>
-                        </div>
-                        <div class="honor-item" style="display: flex; align-items: center; gap: 10px; padding: 12px 15px; background: rgba(0,0,0,0.2); border-radius: 10px;">
-                            <i class="fas fa-medal" style="color: #e94560;"></i>
-                            <span style="font-size: 14px;">First-class Graduate Scholarship, Sichuan University</span>
-                        </div>
-                    </div>
+            <div class="proj-item">
+                <div class="proj-header">
+                    <h3>Awesome-Dichotomous-Image-Segmentation</h3>
+                    <a href="https://github.com/Tennine2077/Awesome-Dichotomous-Image-Segmentation" target="_blank" style="font-size: 13px;"><i class="fab fa-github"></i> GitHub</a>
                 </div>
-            </section>
+                <p class="proj-desc">A curated collection of resources for Dichotomous Image Segmentation (DIS), including papers, datasets, and code implementations.</p>
+                <div class="proj-tags">
+                    <span>Computer Vision</span><span>Image Segmentation</span><span>Awesome List</span>
+                </div>
+            </div>
 
-            <!-- Footer -->
-            <footer class="footer">
-                <p>© 2026 Xianjie Liu. Made with <i class="fas fa-heart" style="color: #e74c3c;"></i> and GitHub Pages</p>
-            </footer>
-        </main>
+            <div class="proj-item">
+                <div class="proj-header">
+                    <h3>National-level Interdisciplinary Innovation Project</h3>
+                </div>
+                <p class="proj-desc">Multimodal-based diagnosis of periprosthetic joint infection. Collaborated with West China Hospital. Outputs: ICMSP paper (1st author), Sensors SCI Q2 (3rd author), 1 patent, 1 software copyright.</p>
+                <div class="proj-tags">
+                    <span>Medical Imaging</span><span>Multimodal Learning</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Honors -->
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-trophy"></i> Honors & Awards</h2>
+            <ul class="honor-list">
+                <li><i class="fas fa-award"></i> First-class Graduate Scholarship, Sichuan University</li>
+                <li><i class="fas fa-award"></i> Second Prize, "Internet+" Innovation and Entrepreneurship Competition</li>
+                <li><i class="fas fa-award"></i> Third Prize, APMCM Asia-Pacific Mathematical Contest in Modeling</li>
+                <li><i class="fas fa-award"></i> Third Prize, "Challenge Cup" Sichuan University Academic Works Competition</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Xianjie Liu. Hosted on GitHub Pages.</p>
+        </footer>
+
     </div>
 </body>
 </html>
